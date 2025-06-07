@@ -45,6 +45,13 @@ const projects = [
     desc: "A debeler machine is used for processing agricultural or industrial materials by cutting, peeling, or separating parts efficiently.",
     gallery: ["/img/1748978987114.jpg", "/img/1748871792511.JPG"],
   },
+  {
+    id: "machine8",
+    img: "/img/IMG-20250601-WA0054.jpg",
+    title: "All Tractor Hydra Crane",
+    desc: "A debeler machine is used for processing agricultural or industrial materials by cutting, peeling, or separating parts efficiently.",
+    gallery: ["/img/1748978987114.jpg", "/img/1748871792511.JPG"],
+  },
 ];
 
 export default function Projects() {
@@ -58,7 +65,6 @@ export default function Projects() {
       }
     }
   }, [location]);
-
   return (
     <section id="projects-section" className="projects-section">
       <h2 className="animated-h1">Our Projects</h2>

@@ -52,22 +52,28 @@ const allTrades = [
     description: 'Mini Tipper All Body Manufacturing involves designing and fabricating compact tipper truck bodies, used for efficient loading and unloading of materials in construction, agriculture, and waste management.',
   },
   {
-    id: 3,
+    id: 9,
     name: 'Shredder Pressure',
     image: '/img/IMG-20250601-WA0035.jpg',
     description: 'High-pressure mechanism in shredder machines ensures efficient cutting and compression of tough materials for optimal size reduction.',
   },
   {
-    id: 3,
+    id: 10,
     name: 'Shredder Machine Blade',
     image: '/img/IMG-20250601-WA0049.jpg',
     description: 'Shredder Machine Blade is a heavy-duty cutting tool designed to efficiently shred materials like plastic, crop waste, or paper into smaller pieces for recycling or disposal.',
   },
   {
-    id: 2,
+    id: 11,
     name: 'Conveyor Roller',
     image: '/img/IMG-20250601-WA0024.jpg',
     description: 'Durable and smooth-rotating rollers used in conveyor systems to efficiently move goods across production or packaging lines.',
+  },
+  {
+    id: 12,
+    name: 'Ford3600 Brack Drum',
+    image: '/img/drum.jpeg',
+    description: 'We proudly manufacture and sell high-quality, durable brake drums for Ford 3600 tractors, made in-house with precision for perfect fit and long-lasting performance.',
   },
   // Add more products as needed
 ];

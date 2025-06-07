@@ -8,12 +8,7 @@ const projects = [
     img: "/img/shrederpng.png",
     title: "Shredder Machine",
     desc: "The Shredder Machine is a powerful device used to cut, tear, or grind materials like crop waste, plastic, or paper into smaller pieces for easy disposal, recycling, or composting.",
-    gallery: [
-      "/img/IMG-20250601-WA0028.jpg",
-      "/img/IMG-20250601-WA0032.jpg",
-      "/img/1748978756826.jpg",
-      
-    ],
+    gallery: ["/img/IMG-20250601-WA0028.jpg", "/img/IMG-20250601-WA0032.jpg", "/img/1748978756826.jpg"],
   },
   {
     id: "machine2",
@@ -39,7 +34,7 @@ const projects = [
   {
     id: "machine5",
     img: "/img/conyorpng.png",
-    title: " All Conveyor Machine",
+    title: "All Conveyor Machine",
     desc: "The Conveyor Machine is a mechanical system used to transport materials or goods automatically using belts, rollers, or chains.",
     gallery: ["/img/conveyorimg1.jpg", "/img/conveyorimg2.jpg", "/img/conveyorimg3.png"],
   },
@@ -48,7 +43,7 @@ const projects = [
     img: "/img/debeeler.jpg",
     title: "Debel With Cutter Machine 20HP",
     desc: "A debeler machine is used for processing agricultural or industrial materials by cutting, peeling, or separating parts efficiently.",
-    gallery: ["/img/1748978987114.jpg", "/img/1748871792511.JPG",],
+    gallery: ["/img/1748978987114.jpg", "/img/1748871792511.JPG"],
   },
 ];
 
@@ -69,28 +64,30 @@ export default function Projects() {
       <h2 className="animated-h1">Our Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <Link
-            to={`/project/${project.id}`}
+          <motion.div
+            className="project-card"
             key={project.id}
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            whileHover={{ scale: 1.03 }}
+            viewport={{ once: true }}
           >
-            <motion.div
-              className="project-card"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ scale: 1.03 }}
-              viewport={{ once: true }}
-            >
-              <img src={project.img} alt={project.title} />
-              <div className="project-info">
-                <h3>{project.title}</h3>
-                <p>{project.desc}</p>
-              </div>
-            </motion.div>
-          </Link>
+            <img src={project.img} alt={project.title} />
+            <div className="project-info">
+              <h3>{project.title}</h3>
+              <p>{project.desc}</p>
+
+              {/* Button to navigate to Project Detail Page */}
+              <Link
+                to={`/project/${project.id}`}
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="view-details-button"
+              >
+                View Details
+              </Link>
+            </div>
+          </motion.div>
         ))}
       </div>
     </section>

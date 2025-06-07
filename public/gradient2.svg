@@ -1,0 +1,11 @@
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="800" height="400">
+            <!-- https://grabient.com/HQDgDAbANMDsCsBGGsLWAZgJyxtsesIMiYGJ8xwiE8UALMAEz1YPPbtO1QC0YwMPWiJg8LASaCwBfqAhYgA/HQDgDAbANMDsCsBGGsLWAZgJyxtsesIMiYGJ8xwiE8UALMAEz1YPPbtO1QC0YwMPWiJg8LASaCwBfqAhYgA?steps=8&style=linearGradient&angle=90 -->
+            <defs>
+              <linearGradient id="gradient" x1="0.000" y1="0.500" x2="1.000" y2="0.500">
+        <stop offset="0.000" stop-color="rgb(76, 72, 62)" /><stop offset="0.143" stop-color="rgb(58, 44, 40)" /><stop offset="0.286" stop-color="rgb(45, 27, 31)" /><stop offset="0.429" stop-color="rgb(36, 22, 35)" /><stop offset="0.571" stop-color="rgb(33, 30, 51)" /><stop offset="0.714" stop-color="rgb(35, 49, 80)" /><stop offset="0.857" stop-color="rgb(43, 80, 117)" /><stop offset="1.000" stop-color="rgb(56, 118, 161)" />
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="800" height="400" fill="url(#gradient)" />
+          </svg>
+        
